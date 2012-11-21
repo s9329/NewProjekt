@@ -1,5 +1,4 @@
 package PJWSTK.Projekt;
-
 import java.util.List;
 
 import PJWSTK.Projekt.DBmanager;
@@ -21,32 +20,37 @@ public class PersonDB implements PersonInterface{
 
 	}
 
-	public void addPerson() {
+//get
+public String getName() {
+	return name;
+}
 
-	}
-	public void removePerson() {
+public int getID() {
+	return ID;
+}
 
-	}
-	public List<PersonInterface> getAll() {
+public int getPets() {
+	return Pets;
+}
 
-		return null;
-	}
 
-	public void addPet() {
-		
 
-	}
+//metody
+public boolean addPerson(PersonDB obj) {
+	return db.addPerson(obj);
+}
 
-	public void removePet() {
-		
-
-	}
-
-	public void removeAllPets() {
-		
-
-	}
-
-	
+public void removePerson() {
 
 }
+public List<PersonInterface> getAll() {
+
+	return null;
+}
+
+
+
+	
+}
+
+

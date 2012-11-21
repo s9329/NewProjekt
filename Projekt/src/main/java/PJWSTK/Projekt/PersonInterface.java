@@ -4,14 +4,9 @@ import java.util.List;
 
 public interface PersonInterface {
 
-	void addPerson();
+	boolean addPerson (PersonDB obj);
 	void removePerson();
 	List<PersonInterface> getAll();
-	void addPet();
-	void removePet();
-	void removeAllPets();
-
-
-
+	
 
 }
