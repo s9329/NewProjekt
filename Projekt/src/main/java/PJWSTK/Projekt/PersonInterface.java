@@ -4,9 +4,10 @@ import java.util.List;
 
 public interface PersonInterface {
 
-	boolean addPerson (PersonDB obj);
-	void removePerson();
-	List<PersonInterface> getAll();
-	
+	boolean addPerson(PersonDB obj);
+
+	boolean removePerson(PersonDB obj);
+
+	List<PersonDB> getAll();
 
 }

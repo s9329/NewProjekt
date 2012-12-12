@@ -1,56 +1,51 @@
 package PJWSTK.Projekt;
+
 import java.util.List;
 
-import PJWSTK.Projekt.DBmanager;
+public class PersonDB implements PersonInterface {
 
-public class PersonDB implements PersonInterface{
-
-	private String name;
-	private int ID;
-	private int Pets;
+private String name;
+private int ID;
+private int Pets;
 	
 
-	DBmanager db=DBmanager.getInstance();
+private Metody db=new Metody();
+public PersonDB(String name, int ID, int Pets){
+	this.name=name;
+	this.ID=ID;
+	this.Pets=Pets;
 
-	public PersonDB(String name, int ID, int Pets){
-		this.name=name;
-		this.ID=ID;
-		this.Pets=Pets;
-		
+}
 
-	}
-
-//get
 public String getName() {
 	return name;
 }
-
-public int getID() {
+public int getID(){
 	return ID;
-}
-
-public int getPets() {
+	}
+public int getPets(){
 	return Pets;
 }
+public String toString(){
 
+	return "Persons name:"+name+" ID:"+ID+" Pets:"+Pets;
+}
 
-
-//metody
 public boolean addPerson(PersonDB obj) {
 	return db.addPerson(obj);
 }
 
-public void removePerson() {
-
-}
-public List<PersonInterface> getAll() {
-
-	return null;
+public boolean removePerson(PersonDB obj) {
+	return db.removePerson(obj);
 }
 
+public List<PersonDB> getAll() {
+
+		return db.getAll();
+}
 
 
-	
+
 }
 
 
