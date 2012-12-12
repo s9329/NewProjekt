@@ -7,7 +7,11 @@ public interface PersonInterface {
 	boolean addPerson(PersonDB obj);
 
 	boolean removePerson(PersonDB obj);
+	
+	boolean removeAllPets(PersonDB obj);
 
 	List<PersonDB> getAll();
+	
+	
 
 }

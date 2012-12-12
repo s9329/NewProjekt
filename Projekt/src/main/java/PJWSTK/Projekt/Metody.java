@@ -118,4 +118,13 @@ public class Metody {
 		return result;
 	}
 
+	public boolean removeAllPets(PersonDB obj) {
+		try {
+			removeAllPets.setString(1, obj.getName());
+			return removeAllPets.execute();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
 }
