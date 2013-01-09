@@ -2,7 +2,7 @@ package PJWSTK.Projekt;
 
 import java.util.List;
 
-public class PersonDB implements PersonInterface {
+public class PersonDB {
 
 	private String name;
 	private int ID;
@@ -34,21 +34,5 @@ public class PersonDB implements PersonInterface {
 		return "Persons name:" + name + " ID:" + ID + " Pets:" + Pets;
 	}
 
-	public boolean addPerson(PersonDB obj) {
-		return db.addPerson(obj);
-	}
-
-	public boolean removePerson(PersonDB obj) {
-		return db.removePerson(obj);
-	}
-
-	public boolean removeAllPets(PersonDB obj) {
-		return db.removeAllPets(obj);
-	}
-
-	public List<PersonDB> getAll() {
-
-		return db.getAll();
-	}
-
+	
 }

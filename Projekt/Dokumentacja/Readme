@@ -1,0 +1,7 @@
+Projekt tamagotchi.
+Administrator będzie mogl zarzadzac użytkownikami i petami w bazie danych.
+Uzytkownik będzie mógł wybrać peta, którym się opiekuje. Równocześnie będzie mógł go porzucić na śmierć :(
+Po zaklepaniu peta użytkownik zostanie przypisany do aplikacji i będzie reagować odpowiednio na stany,
+w których znajduje sie pet.
+
+
